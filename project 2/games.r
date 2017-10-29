@@ -13,4 +13,4 @@ category<-levels(data$Rating)[levels(data$Rating)!="T"]<-"Not Teen"
 contigency_table<-table(data$Rating,data$Genre)
 print(contigency_table)
 cat("chi-square test\n")
-print(chisq.test(contg_table))#hypothesis no correlation if alpha=0.1 discard hypothesis for alpha =0.05 retain
+print(chisq.test(contigency_table))#hypothesis no correlation if alpha=0.1 discard hypothesis for alpha =0.05 retain
